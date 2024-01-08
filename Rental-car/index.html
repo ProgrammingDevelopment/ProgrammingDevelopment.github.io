@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/colorwave@1.0.0/dist/colorwave.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <!-- end fav icon -->
+    <title>User Registration</title>
+  </head>
+  <body>
+    <div class="registration-container">
+      <h2>User Registration</h2>
+      <form id="registrationForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" required />
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" required />
+
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" required />
+
+        <label for="identityNumber">Identity Number:</label>
+        <input type="text" id="identityNumber" required />
+
+        <button type="submit">Register</button>
+      </form>
+    </div>
+
+    <div class="car-management-container">
+      <h2>Car Management</h2>
+
+      <div>
+        <h3>Add a New Car</h3>
+        <form id="addCarForm">
+          <label for="merk">Merk:</label>
+          <input type="text" id="merk" required />
+
+          <label for="model">Model:</label>
+          <input type="text" id="model" required />
+
+          <label for="platNumber">Plat Number:</label>
+          <input type="text" id="platNumber" required />
+
+          <label for="fees">Fees per Day:</label>
+          <input type="number" id="fees" required />
+
+          <button type="submit">Add Car</button>
+        </form>
+      </div>
+
+      <div>
+        <h3>Search Cars</h3>
+        <form id="searchCarsForm">
+          <label for="searchMerk">Merk:</label>
+          <input type="text" id="searchMerk" />
+
+          <label for="searchModel">Model:</label>
+          <input type="text" id="searchModel" />
+
+          <label for="searchFees">Max Fees per Day:</label>
+          <input type="number" id="searchFees" />
+
+          <button type="button" onclick="searchCars()">Search</button>
+        </form>
+      </div>
+
+      <div id="carList">
+        <div>
+          <h2>Rented Cars</h2>
+          <ul id="rentedCarsList">
+            <li>Car 1 - Plate Number: ABC123, Rented by: Iman Kasih Nazara</li>
+            <li>Car 2 - Plate Number: XYZ789, Rented by: Fikky Purnomo</li>
+            <li>Car 3 - Plate Number: XYZ789, Rented by: Nahda Jibran</li>
+            <li>Car 5 - Plate Number: XYZ789, Rented by: Lovano love</li>
+            <li>Car 6 - Plate Number: XYZ789, Rented by: dimas</li>
+            <li>Car 7 - Plate Number: XYZ789, Rented by: farid panji</li>
+            <li>Car 8 - Plate Number: XYZ789, Rented by: fadhlan</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="rental-management-container">
+      <h2>Rental Management</h2>
+
+      <div>
+        <h3>Rent a Car</h3>
+        <form id="rentCarForm">
+          <label for="selectCar">Select Car:</label>
+          <select id="selectCar" required>
+            <!-- Populate with available cars -->
+          </select>
+
+          <label for="startDate">Start Date:</label>
+          <input type="date" id="startDate" required />
+
+          <label for="endDate">End Date:</label>
+          <input type="date" id="endDate" required />
+
+          <button type="submit">Rent Car</button>
+        </form>
+      </div>
+
+      <div id="rentedList"></div>
+      <!-- -->
+    </div>
+    <div>
+      <h3>Return a Car</h3>
+      <form id="returnCarForm">
+        <label for="returnPlatNumber">Plat Number:</label>
+        <input type="text" id="returnPlatNumber" required />
+
+        <button type="submit">Return Car</button>
+      </form>
+    </div>
+
+    <!-- logout -->
+    <div class="logout-container">
+      <button id="logoutButton">Logout</button>
+    </div>
+    <!-- end logout -->
+
+    <!-- Footer section -->
+    <footer>
+      <p>&copy; 2024 Rental Car App | Developed by Swandaru Tirta Sandhika</p>
+    </footer>
+
+    <script src="./assets/script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

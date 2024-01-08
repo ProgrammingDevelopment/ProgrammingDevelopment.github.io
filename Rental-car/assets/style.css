@@ -1,0 +1,69 @@
+/* style.css */
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f8f9fa; /* Bootstrap default background color */
+  margin: 0;
+  padding: 0;
+  color: #495057; /* Bootstrap default text color */
+}
+
+.registration-container {
+  max-width: 400px;
+  margin: 50px auto;
+  background-color: #fff; /* White background for the registration container */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  padding: 8px;
+  border: 1px solid #ced4da; /* Bootstrap default input border color */
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px;
+  background-color: #007bff; /* Bootstrap primary color */
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Additional styling for car-management-container, rental-management-container, and logout-container can be added as needed */
+
+.car-management-container,
+.rental-management-container,
+.logout-container {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#carList,
+#rentedList {
+  margin-top: 20px;
+}
+
+#returnCarForm {
+  margin-top: 20px;
+}
